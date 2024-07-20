@@ -39,11 +39,11 @@
                     [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
                     [maximizable]="true">
 
-                            <div class="wrapper">
+                            <div class="wrapper" *ngIf="singleUser">
                               <div class="banner-image"> </div>
-                              <h1> {{singleUser?.firstName}}-{{singleUser?.lastName}}</h1>
-                              <h3>{{singleUser?.email}}</h3>
-                              <p>{{singleUser?.message}}, <br/>
+                              <h1>{{singleUser.firstName}}-{{singleUser.lastName}}</h1>
+                              <h3>{{singleUser.email}}</h3>
+                              <p>{{singleUser.message}}</p>
 
                               </div>
                               <div class="button-wrapper">
